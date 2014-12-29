@@ -47,14 +47,15 @@ process.on('SIGINT', function() {
 });
 
 
-/** User SCHEMA **/
+/** Company SCHEMA **/
 /** Replace this Schema with your own(s) **/
-var usersSchema = new mongoose.Schema({
-  userName : String,
-  email: {type: String, unique: true},
-  pw: String,
-  created: { type: Date, default: new Date() }
+var companySchema = new mongoose.Schema({
+  companyName: String,
+  ownerName : String,
+  ownerEmail: {type: String, unique: true},
+  ownerPassword: String,
+  companyCreated: { type: Date, default: new Date() }
 });
 
-mongoose.model( 'User', usersSchema,"testusers" );
+mongoose.model( 'Companies', companySchema,"companies" );
 
