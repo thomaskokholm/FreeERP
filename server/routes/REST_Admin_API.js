@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var user = mongoose.model('User');
+var user = mongoose.model('Companies');
 
 /* GET A User From The DataBase */
 router.get('/user', function(req, res) {

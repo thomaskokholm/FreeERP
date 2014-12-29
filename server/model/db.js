@@ -21,7 +21,7 @@ if( typeof global.TEST_DATABASE != "undefined" ) {
   dbURI = global.TEST_DATABASE;
 }
 else{
-  dbUri = 'mongodb://freeerp_rw:$Rah7faXeP@ds043180.mongolab.com:43180/freeerp'
+  dbUri = 'mongodb://freeerp_rw:Pru*a6as@ds043180.mongolab.com:43180/freeerp'
 }
 
 mongoose.connect(dbURI);
