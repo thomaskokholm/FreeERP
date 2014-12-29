@@ -19,7 +19,8 @@ angular.module('myAppRename.controllers', []).
     }
 
 
-    $scope.title = "Semester Project";
+    $scope.title = "Free ERP";
+    $scope.subtitle = "A Free Cloud-based ERP System"
     $scope.username = "";
     $scope.isAuthenticated = false;
     $scope.isAdmin = false;
